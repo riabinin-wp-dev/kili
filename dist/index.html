@@ -16,7 +16,6 @@
     <title>Документ</title>
     
     
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 
 <body>
@@ -79,7 +78,15 @@
         </main>
 
     </div>
-    <!-- <script src="assets/js/app.js"></script> -->
+    <script>
+        function toggleList(button) {
+            button.classList.toggle('active');
+            const nestedList = button.closest('li').querySelector('.nested-list');
+            if (nestedList) {
+                nestedList.classList.toggle('active');
+            }
+        }
+    </script>
 </body>
-</html>
 
+</html>

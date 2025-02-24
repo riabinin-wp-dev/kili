@@ -16,7 +16,6 @@
     <title>Документ</title>
     
     
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 
 <body>
@@ -46,15 +45,65 @@
                             <h1 class="project_title">Компания</h1>
                             <div class="company_form">
                                 <form action="">
-                                    <label for="company_name" class="company_form_label">
-                                        <span>Название компании</span>
-                                        <input type="text" id="company_name" name="company_name" placeholder="Моя первая компания">
-                                    </label>
-                                    <label for="company_days" class="company_form_label">
-                                        <span>Рабочие дни и часы</span>
-                                        <input type="text" id="company_days" name="company_days"
-                                            placeholder="с 10 до 18 часов по будням">
-                                    </label>
+                                    <div class="flex-row company_form_row">
+                                        <label for="company_name" class="company_form_label">
+                                            <span>Название компании</span>
+                                            <input type="text" id="company_name" name="company_name" placeholder="Моя первая компания">
+                                        </label>
+                                        <label for="company_name_save" class="company_attr_save">
+                                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="1" y="1.5" width="22" height="22" rx="6" stroke-width="2" />
+                                                <path d="M6 12.5L10.2857 16.7857" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                                <path d="M18.8573 8.21429L10.2859 16.7857" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                              </svg>
+                                              <input type="checkbox" name="company_name_save" id="company_name_save">
+                                        </label>
+                                        <div class="flex-column">
+                                            <a href="#!">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="1" y="1.5" width="14" height="14" rx="1.5" fill="#91B7BA" stroke="#91B7BA" stroke-width="2" />
+                                                    <path d="M7.99995 10.2902C7.99995 9.46367 8.43423 8.69659 9.1428 8.27145C9.85138 7.8463 10.2857 7.07922 10.2857 6.2527V6.2143C10.2857 4.95167 9.26258 3.92859 7.99995 3.92859C6.73732 3.92859 5.71423 4.95167 5.71423 6.2143" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <circle cx="8.00003" cy="13.0714" r="0.642857" fill="#D9D9D9" stroke="white" />
+                                                  </svg>
+                                            </a>
+                                            <a href="#!">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="1" y="1.5" width="14" height="14" rx="1.5" fill="#FF5050" stroke="#FF5050" stroke-width="2" />
+                                                    <path d="M6.77576 10.7856V6.21417L10.3676 8.49989L6.77576 10.7856Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="flex-row company_form_row">
+                                        <label for="company_days" class="company_form_label">
+                                            <span>Рабочие дни и часы</span>
+                                            <input type="text" id="company_days" name="company_days"
+                                                placeholder="с 10 до 18 часов по будням">
+                                        </label>
+                                        <label for="company_days_save" class="company_attr_save">
+                                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="1" y="1.5" width="22" height="22" rx="6" stroke-width="2" />
+                                                <path d="M6 12.5L10.2857 16.7857" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                                <path d="M18.8573 8.21429L10.2859 16.7857" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                              </svg>
+                                              <input type="checkbox" name="company_days_save" id="company_days_save">
+                                        </label>
+                                        <div class="flex-column">
+                                            <a href="#!">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="1" y="1.5" width="14" height="14" rx="1.5" fill="#91B7BA" stroke="#91B7BA" stroke-width="2" />
+                                                    <path d="M7.99995 10.2902C7.99995 9.46367 8.43423 8.69659 9.1428 8.27145C9.85138 7.8463 10.2857 7.07922 10.2857 6.2527V6.2143C10.2857 4.95167 9.26258 3.92859 7.99995 3.92859C6.73732 3.92859 5.71423 4.95167 5.71423 6.2143" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <circle cx="8.00003" cy="13.0714" r="0.642857" fill="#D9D9D9" stroke="white" />
+                                                  </svg>
+                                            </a>
+                                            <a href="#!">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="1" y="1.5" width="14" height="14" rx="1.5" fill="#FF5050" stroke="#FF5050" stroke-width="2" />
+                                                    <path d="M6.77576 10.7856V6.21417L10.3676 8.49989L6.77576 10.7856Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
                                     <div class="days-of-week">
                                         <label class="day-label">
                                             <input type="checkbox" name="days[]" value="10-18" class="day-checkbox">
@@ -98,6 +147,7 @@
                                         <textarea name="company_text" id="company_text" placeholder="Placeholder"></textarea>
                                     </label>
                                     <div class="company_form_submit">
+                                        <!-- анимация по классу active -->
                                         <button type="submit" class="btn-reset company_button_submit active">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -179,7 +229,15 @@
         </main>
 
     </div>
-    <!-- <script src="assets/js/app.js"></script> -->
+    <script>
+        function toggleList(button) {
+            button.classList.toggle('active');
+            const nestedList = button.closest('li').querySelector('.nested-list');
+            if (nestedList) {
+                nestedList.classList.toggle('active');
+            }
+        }
+    </script>
 </body>
-</html>
 
+</html>

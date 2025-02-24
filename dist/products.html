@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <title>Документ</title>
+    
+    
+</head>
+
+<body>
+    <div class="page">
+
+        <main class="main">
+            
+            <section class="company">
+                <div class="container_fluid">
+                    <div class="grid-row">
+                        <div class="company_left">
+                            <a href="" class="main_logo">
+                                <img src="./assets/images/logo.svg" alt="logo" width="172" height="76">
+                            </a>
+                            <nav>
+                                <ul class="company_nav list-reset">
+                                    <li class="active"><a href="">Компания</a></li>
+                                    <li><a href="">Товары</a></li>
+                                </ul>
+                            </nav>
+                            <dl class="company_balance">
+                                <dt>Баланс: </dt>
+                                <dd>88.09 <span>руб</span></dd>
+                            </dl>
+                        </div>
+                        <div class="company_center products">
+                            <div class="flex-row">
+                                <h1 class="project_title">Товары</h1>
+                                <label for="bitrix_load" class="products_loader">
+                                    <input type="checkbox" name="bitrix_load" id="bitrix_load">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="12" height="12" rx="1.5" stroke-width="2" />
+                                    </svg>
+                                    <span>Брать товары из Битрикс24</span>
+                                </label>
+                            </div>
+                            <a href="#!" class="company_button_submit --products">Обновить товары из Битрикс24</a>
+                            <div class="company_form">
+                                <form action="">
+                                    <h3 class="project_h3">Каталоги</h3>
+            
+                                    <!-- масштабируемый список -->
+                                     <!-- PS: функция toggleList внизу страницы -->
+                                    <ul class="project_list">
+                                        <li>
+                                            <!-- управление -->
+                                            <div class="flex-wrapper">
+                                                <label for="type1" class="product_list_check">
+                                                    <span></span>
+                                                    <input type="checkbox" name="type1" id="type1">
+                                                </label>
+                                                <button type="button" class="btn-reset product_list_toggle"
+                                                    aria-label="open or close list" onclick="toggleList(this)">
+                                                    <span></span>
+                                                </button>
+                                                <span>Без каталога</span>
+                                            </div>
+                                            <!-- вложенный список -->
+                                            <ul class="nested-list">
+                                                <li>
+                                                    <!-- управление -->
+                                                    <div class="flex-wrapper">
+                                                        <label for="type2" class="product_list_check">
+                                                            <span></span>
+                                                            <input type="checkbox" name="type2" id="type2">
+                                                        </label>
+                                                        <button type="button" class="btn-reset product_list_toggle"
+                                                            aria-label="open or close list" onclick="toggleList(this)">
+                                                            <span></span>
+                                                        </button>
+                                                        <span>Вложенный список 1</span>
+                                                    </div>
+                                                    <!-- вложенный список -->
+                                                    <ul class="nested-list">
+                                                        <li>
+                                                            <!-- управление -->
+                                                            <div class="flex-wrapper">
+                                                                <label for="type3" class="product_list_check">
+                                                                    <span></span>
+                                                                    <input type="checkbox" name="type3" id="type3">
+                                                                </label>
+                                                                <button type="button" class="btn-reset product_list_toggle"
+                                                                    aria-label="open or close list" onclick="toggleList(this)">
+                                                                    <span></span>
+                                                                </button>
+                                                                <span>Вложенный список 2</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <!-- управление -->
+                                            <div class="flex-wrapper">
+                                                <label for="type1" class="product_list_check">
+                                                    <span></span>
+                                                    <input type="checkbox" name="type1" id="type1">
+                                                </label>
+                                                <button type="button" class="btn-reset product_list_toggle"
+                                                    aria-label="open or close list" onclick="toggleList(this)">
+                                                    <span></span>
+                                                </button>
+                                                <span>Без каталога</span>
+                                            </div>
+                                            <!-- вложенный список -->
+                                            <ul class="nested-list">
+                                                <li>
+                                                    <!-- управление -->
+                                                    <div class="flex-wrapper">
+                                                        <label for="type2" class="product_list_check">
+                                                            <span></span>
+                                                            <input type="checkbox" name="type2" id="type2">
+                                                        </label>
+                                                        <button type="button" class="btn-reset product_list_toggle"
+                                                            aria-label="open or close list" onclick="toggleList(this)">
+                                                            <span></span>
+                                                        </button>
+                                                        <span>Вложенный список 1</span>
+                                                    </div>
+                                                    <!-- вложенный список -->
+                                                    <ul class="nested-list">
+                                                        <li>
+                                                            <!-- управление -->
+                                                            <div class="flex-wrapper">
+                                                                <label for="type3" class="product_list_check">
+                                                                    <span></span>
+                                                                    <input type="checkbox" name="type3" id="type3">
+                                                                </label>
+                                                                <button type="button" class="btn-reset product_list_toggle"
+                                                                    aria-label="open or close list" onclick="toggleList(this)">
+                                                                    <span></span>
+                                                                </button>
+                                                                <span>Вложенный список 2</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+            
+                                    <h3 class="project_h3 mt40">Поля товара</h3>
+            
+                                    <div class="product_fields">
+                                            <label for="type1-field" class="product_fields_label">
+                                                <input type="checkbox" name="type1-field" id="type1-field">
+                                                <span></span>
+                                                Активность
+                                            </label>
+                                            <label for="type2-field" class="product_fields_label">
+                                                <input type="checkbox" name="type2-field" id="type2-field">
+                                                <span></span>
+                                                Наличие набора
+                                            </label>
+                                            <label for="type3-field" class="product_fields_label">
+                                                <input type="checkbox" name="type3-field" id="type3-field">
+                                                <span></span>
+                                                Символьный код
+                                            </label>
+                                            <label for="type4-field" class="product_fields_label">
+                                                <input type="checkbox" name="type4-field id="type4-field">
+                                                <span></span>
+                                                Дата создания
+                                            </label>
+                                    </div>
+            
+            
+                                    <h3 class="project_h3 mt40">Таблица</h3>
+                                    <!-- для 1 и 4 колонки задана ширина побольше -->
+                                    <div class="table_wrapper">
+                                        <table class="product_table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Каталоги</th>
+                                                    <th>Тип детального описания</th>
+                                                    <th>Кто изменил</th>
+                                                    <th>Наименование</th>
+                                                    <th>Сегмент товара</th>
+                                                    <th>Цена</th>
+                                                    <th>Валюта</th>
+                                                    <th>Верхний уровень</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Верхний уровень</td>
+                                                    <td>11</td>
+                                                    <td>Кагор ВК крас. слад. Серия Skoliovin 2021</td>
+                                                    <td>800</td>
+                                                    <td>RUB</td>
+                                                    <td>Верхний уровень</td>
+                                                    <td>Верхний уровень; Второй уровень каталога</td>
+                                                    <td>html</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Верхний уровень</td>
+                                                    <td>11</td>
+                                                    <td>Товар второго уровня</td>
+                                                    <td>VIP</td>
+                                                    <td>1234</td>
+                                                    <td>RUB</td>
+                                                    <td></td>
+                                                    <td>html</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Верхний уровень; Второй уровень 
+                                                        каталога</td>
+                                                    <td>1</td>
+                                                    <td>Уголь ПРОСВЕТ d=45</td>
+                                                    <td>510</td>
+                                                    <td>RUB</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>html</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- пустой контейнер для заполнения места, когда контента будет мало -->
+                                    <div class="grow_content"></div>
+            
+                                    <div class="company_form_submit">
+                                                         <!-- анимация по классу active -->
+                                        <button type="submit" class="btn-reset company_button_submit active">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 1.71423V5.1428" stroke="#00FF09" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                                <path d="M12 22.2857V18.8572" stroke="#678284" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                                <path d="M22.2857 12L18.8571 12" stroke="#00FF09" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                                <path d="M1.71431 12L5.14288 12" stroke="#678284" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                                <path d="M19.2731 4.72693L16.8487 7.15129" stroke="#00FF09" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                                <path d="M4.72688 19.2731L7.15125 16.8488" stroke="#678284" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                                <path d="M19.2731 19.2731L16.8487 16.8487" stroke="#00FF09" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                                <path d="M4.72688 4.72688L7.15125 7.15125" stroke="#678284" stroke-width="2"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                            Сохранить
+                                        </button>
+                                        <button type="button" class="btn-reset company_button_cancel">Отменить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="company_right">
+                            <ul class="messages_list list-reset">
+                                <li class="bot">Привет, я Кали! Помогу тебе настроить компанию</li>
+                                <li class="human">Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные
+                                    тексты. Деревни продолжил курсивных маленькая, бросил всемогущая коварный он это сбить
+                                    заманивший рукопись? Всеми своего они текст жаренные. Своего, бросил безорфографичный.</li>
+                                <li class="bot">Извините, но я не совсем понял ваш запрос. Могу я узнать, какую информацию вы хотите
+                                    получить о курсах или услугах нашей школы?
+                                    <small>-0.04152 руб Баланс: 88.09 руб</small>
+                                </li>
+                                <li class="bot">Привет, я Кали! Помогу тебе настроить компанию</li>
+                                <li class="human">Покажи мой баланс</li>
+                                <li class="bot">Извините, но я не совсем понял ваш запрос. Могу я узнать, какую информацию вы хотите
+                                    получить о курсах или услугах нашей школы?
+                                    <small>-0.04152 руб Баланс: 88.09 руб</small>
+                                </li>
+                                <li class="bot">Привет, я Кали! Помогу тебе настроить компанию</li>
+                                <li class="human">Покажи мой баланс</li>
+                                <li class="bot">Извините, но я не совсем понял ваш запрос. Могу я узнать, какую информацию вы хотите
+                                    получить о курсах или услугах нашей школы?
+                                    <small>-0.04152 руб Баланс: 88.09 руб</small>
+                                </li>
+                                <li class="bot">Привет, я Кали! Помогу тебе настроить компанию</li>
+                                <li class="human">Покажи мой баланс</li>
+                                <li class="bot">Извините, но я не совсем понял ваш запрос. Могу я узнать, какую информацию вы хотите
+                                    получить о курсах или услугах нашей школы?
+                                    <small>-0.04152 руб Баланс: 88.09 руб</small>
+                                </li>
+                                <li class="bot">Привет, я Кали! Помогу тебе настроить компанию</li>
+                                <li class="human">Покажи мой баланс</li>
+                                <li class="bot">Извините, но я не совсем понял ваш запрос. Могу я узнать, какую информацию вы хотите
+                                    получить о курсах или услугах нашей школы?
+                                    <small>-0.04152 руб Баланс: 88.09 руб</small>
+                                </li>
+                            </ul>
+                            <div class="messages_form">
+                                <form action="">
+                                    <input type="text" class="messages_input" placeholder="Введите сообщение">
+                                    <button type="submit" class="messages_submit btn-reset">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 15L15 1M15 1V11.5M15 1H4.49999" stroke="white" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    <script>
+        function toggleList(button) {
+            button.classList.toggle('active');
+            const nestedList = button.closest('li').querySelector('.nested-list');
+            if (nestedList) {
+                nestedList.classList.toggle('active');
+            }
+        }
+    </script>
+</body>
+
+</html>
