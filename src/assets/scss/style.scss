@@ -1,0 +1,13 @@
+// @use  'vendor/reset';
+@use 'blocks/vars' as *;
+// @use  "./vendor/animate";
+@use 'fonts' as *;
+@use 'settings' as *;
+@use 'mixins/breakpoint' as *;
+@use 'blocks/container' as *;
+@use 'blocks/page' as *;
+@use 'blocks/header' as *;
+@use 'blocks/footer' as *;
+@use 'blocks/messages' as *;
+@use 'blocks/company' as *;
+@use 'blocks/products' as *;

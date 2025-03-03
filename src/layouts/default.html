@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    {{> head }}
+</head>
+
+<body>
+    <div class="page">
+        {{> header }}
+
+        <main class="main">
+            {{> body }}
+        </main>
+        {{> footer }}
+
+    </div>
+    <script>
+        function toggleList(button) {
+            button.classList.toggle('active');
+            const nestedList = button.closest('li').querySelector('.nested-list');
+            if (nestedList) {
+                nestedList.classList.toggle('active');
+            }
+        }
+    </script>
+</body>
+
+</html>

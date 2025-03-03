@@ -1,0 +1,9 @@
+.container, .container_fluid{
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.container_fluid{
+    max-width: var(--container-fluid-width);
+}
